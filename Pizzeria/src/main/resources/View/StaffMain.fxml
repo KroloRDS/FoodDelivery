@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="129.0" prefWidth="239.0" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Pizzeria.Controller.StaffMain">
+   <children>
+      <Button layoutX="14.0" layoutY="31.0" mnemonicParsing="false" onAction="#changeSceneToStaffOrders" text="Obsługa zamówień" AnchorPane.leftAnchor="14.0" AnchorPane.topAnchor="31.0" />
+      <Button layoutX="140.0" layoutY="31.0" mnemonicParsing="false" onAction="#changeSceneToStaffMenu" text="Edcja Menu" AnchorPane.leftAnchor="140.0" AnchorPane.topAnchor="31.0" />
+      <Button layoutX="14.0" layoutY="90.0" mnemonicParsing="false" onAction="#changeSceneToWelcome" text="Wróć" AnchorPane.leftAnchor="14.0" AnchorPane.topAnchor="90.0" />
+      <Label layoutX="14.0" layoutY="14.0" text="Panel restauratora:" AnchorPane.leftAnchor="14.0" AnchorPane.topAnchor="14.0" />
+   </children>
+</AnchorPane>

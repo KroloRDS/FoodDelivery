@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="88.0" prefWidth="551.0" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Pizzeria.Controller.CustomerThankYou">
+   <children>
+      <Label alignment="TOP_LEFT" layoutX="18.0" layoutY="14.0" prefHeight="17.0" prefWidth="516.0" text="Dziękujemy za złożenie zamówienia. Nasz dostawca pojawi się u Państwa niebawem. Smacznego!" textAlignment="CENTER" AnchorPane.leftAnchor="18.0" AnchorPane.topAnchor="14.0" />
+      <Button layoutX="260.0" layoutY="44.0" mnemonicParsing="false" onAction="#changeSceneToWelcome" text="OK" AnchorPane.leftAnchor="260.0" AnchorPane.topAnchor="44.0" />
+   </children>
+</AnchorPane>
