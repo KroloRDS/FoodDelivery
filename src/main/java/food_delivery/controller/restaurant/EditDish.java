@@ -9,8 +9,6 @@ import food_delivery.model.Dish;
 import food_delivery.utils.DBManager;
 import food_delivery.utils.ValidateForm;
 
-import java.util.List;
-
 public class EditDish extends Controller
 {
 	@FXML private TextField name;
@@ -22,14 +20,7 @@ public class EditDish extends Controller
 	{
 		if (dish != null)
 		{
-			beforeEdit = (Dish) DBManager.selectAllWhere(
-					"Dish",
-					"restaurant",
-					"name",
-					restaurant,
-					dish
-			).get(0);
-			
+			beforeEdit = DBManager.selectAllWhere(Dish.class, "restaurant", "name", restaurant, dish).get(0);
 			name.setText(beforeEdit.getName());
 			price.setText(String.valueOf(beforeEdit.getPrice()));
 			description.setText(beforeEdit.getDescription());

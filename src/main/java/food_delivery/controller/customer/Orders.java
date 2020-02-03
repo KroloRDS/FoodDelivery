@@ -16,7 +16,7 @@ public class Orders extends Controller
 	
 	public void initialize()
 	{
-		orders = DBManager.selectAllWhere("Order", "customer", login);
+		orders = DBManager.selectAllWhere(Order.class, "customer", login);
 		orders.forEach(order -> listView.getItems().add(order.getInfoCustomer()));
 	}
 	

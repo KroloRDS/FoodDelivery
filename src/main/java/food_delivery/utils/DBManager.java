@@ -2,7 +2,6 @@ package food_delivery.utils;
 
 import org.hibernate.Session;
 import org.hibernate.query.Query;
-
 import java.util.List;
 
 public class DBManager
@@ -39,37 +38,36 @@ public class DBManager
 	}
 	
 	//Selects all records of given entity
-	public static <T> List<T> selectAll(String entityName)
+	public static <T> List<T> selectAll(Class<T> entity)
 	{
 		Session session = HibernateUtil.getSession();
 		session.beginTransaction();
-		List<T> list = session.createQuery("from " + entityName).list();
+		Query<T> query = session.createQuery("FROM " + entity.getName(), entity);
 		session.getTransaction().commit();
-		return list;
+		return query.list();
 	}
 	
 	//Selects all records of given entity where given column matches given parameter
-	public static <T> List<T> selectAllWhere(String className, String colName, String param)
+	public static <T> List<T> selectAllWhere(Class<T> entity, String colName, String param)
 	{
 		Session session = HibernateUtil.getSession();
 		session.beginTransaction();
-		Query<T> q = session.createQuery("FROM " + className + " WHERE " + colName + " = :param");
-		q.setParameter("param", param);
-		List<T> list = q.list();
+		Query<T> query = session.createQuery("FROM " + entity.getName() + " WHERE " + colName + " = :param", entity);
+		query.setParameter("param", param);
 		session.getTransaction().commit();
-		return list;
+		return query.list();
 	}
 	
 	//Selects all records of given entity where two given columns match two given parameters
-	public static <T> List<T> selectAllWhere(String className, String colName1, String colName2, String param1, String param2)
+	public static <T> List<T> selectAllWhere(Class<T> entity, String coL1, String col2, String param1, String param2)
 	{
 		Session session = HibernateUtil.getSession();
 		session.beginTransaction();
-		Query<T> q = session.createQuery("FROM " + className + " WHERE " + colName1 + " = :param1 AND " + colName2 + "= :param2");
+		String HQL = "FROM " + entity.getName() + " WHERE " + coL1 + " = :param1 AND " + col2 + "= :param2";
+		Query<T> q = session.createQuery(HQL, entity);
 		q.setParameter("param1", param1);
 		q.setParameter("param2", param2);
-		List<T> list = q.list();
 		session.getTransaction().commit();
-		return list;
+		return q.list();
 	}
 }

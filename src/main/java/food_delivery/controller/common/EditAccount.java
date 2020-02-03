@@ -69,7 +69,7 @@ public class EditAccount extends Controller
 	
 	private Account getAccount()
 	{
-		return (Account) DBManager.selectAllWhere("Account", "login", login).get(0);
+		return DBManager.selectAllWhere(Account.class, "login", login).get(0);
 	}
 	
 	private void validateAndGoBack(ActionEvent event)
@@ -127,14 +127,14 @@ public class EditAccount extends Controller
 		
 		String newName = loginTextField.getText();
 		
-		List<Order> orders = DBManager.selectAllWhere("Order", "restaurant", restaurant);
+		List<Order> orders = DBManager.selectAllWhere(Order.class, "restaurant", restaurant);
 		for (Order order : orders)
 		{
 			order.setRestaurant(newName);
 			DBManager.update(order);
 		}
 		
-		List<Dish> dishes = DBManager.selectAllWhere("Dish", "restaurant", restaurant);
+		List<Dish> dishes = DBManager.selectAllWhere(Dish.class, "restaurant", restaurant);
 		for (Dish dish : dishes)
 		{
 			DBManager.delete(dish);

@@ -8,7 +8,7 @@ public class Login
 {
 	public static String validateCredentials(String login, String password)
 	{
-		List<Account> accounts = DBManager.selectAllWhere("Account", "login", login);
+		List<Account> accounts = DBManager.selectAllWhere(Account.class, "login", login);
 		if (accounts.size() == 0)
 		{
 			return "wrong login";

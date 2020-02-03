@@ -21,7 +21,7 @@ public class AddRestaurant extends Controller
 	
 	public void initialize()
 	{
-		accounts = DBManager.selectAll("Account");
+		accounts = DBManager.selectAll(Account.class);
 		accounts.forEach(account -> listView.getItems().add(account.getTypeAndLogin()));
 	}
 	

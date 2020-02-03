@@ -21,7 +21,7 @@ public class Menu extends Controller
 		if (orderDishes == null)
 		{
 			orderDishes = new ArrayList<>();
-			List<Dish> dishes = DBManager.selectAllWhere("Dish", "restaurant", restaurant);
+			List<Dish> dishes = DBManager.selectAllWhere(Dish.class, "restaurant", restaurant);
 			dishes.forEach(dish -> orderDishes.add(new OrderDish(dish.getName(), dish.getInfo(), dish.getPrice())));
 		}
 		orderDishes.forEach(dish -> listView.getItems().add(dish.getLongString()));

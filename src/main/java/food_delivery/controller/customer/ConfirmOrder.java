@@ -24,7 +24,7 @@ public class ConfirmOrder extends Controller
 	public void initialize()
 	{
 		setOrderText();
-		Account account = (Account) DBManager.selectAllWhere("Account", "login", login).get(0);
+		Account account = DBManager.selectAllWhere(Account.class, "login", login).get(0);
 		name.setText(account.getFullName());
 		address.setText(account.getAddress());
 		phone.setText(account.getPhoneNumber());
