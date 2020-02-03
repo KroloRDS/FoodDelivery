@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="600.0" prefWidth="1000.0" styleClass="main" stylesheets="@../../CSS/Styles.css" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="food_delivery.controller.restaurant.Main">
+   <Label fx:id="label" layoutX="327.0" layoutY="134.0" text="placeholder" AnchorPane.leftAnchor="327.0" AnchorPane.topAnchor="134.0" />
+   <Button layoutX="327.0" layoutY="176.0" mnemonicParsing="false" onAction="#changeSceneToRestaurantOrders" prefHeight="39.0" prefWidth="346.0" text="Obsługa zamówień" AnchorPane.leftAnchor="327.0" AnchorPane.topAnchor="176.0" />
+   <Button layoutX="327.0" layoutY="233.0" mnemonicParsing="false" onAction="#changeSceneToRestaurantMenu" prefHeight="39.0" prefWidth="346.0" text="Edcja Menu" AnchorPane.leftAnchor="327.0" AnchorPane.topAnchor="233.0" />
+   <Button layoutX="327.0" layoutY="291.0" mnemonicParsing="false" onAction="#changeSceneToEditAccount" prefHeight="39.0" prefWidth="346.0" text="Edycja danych konta" />
+   <Button layoutX="327.0" layoutY="348.0" mnemonicParsing="false" onAction="#changeSceneToWelcome" prefHeight="39.0" prefWidth="346.0" text="Wyloguj" AnchorPane.leftAnchor="327.0" AnchorPane.topAnchor="348.0" />
+</AnchorPane>

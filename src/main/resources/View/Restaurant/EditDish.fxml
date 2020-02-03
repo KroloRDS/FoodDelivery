@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="600.0" prefWidth="1000.0" styleClass="main" stylesheets="@../../CSS/Styles.css" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="food_delivery.controller.restaurant.EditDish">
+   <Label layoutX="308.0" layoutY="89.0" text="Nazwa potrawy:" AnchorPane.leftAnchor="308.0" AnchorPane.topAnchor="89.0" />
+   <TextField fx:id="name" layoutX="308.0" layoutY="116.0" prefHeight="39.0" prefWidth="384.0" AnchorPane.leftAnchor="308.0" AnchorPane.topAnchor="116.0" />
+   <Label layoutX="308.0" layoutY="221.0" text="Opis:" AnchorPane.leftAnchor="308.0" AnchorPane.topAnchor="221.0" />
+   <TextArea fx:id="description" layoutX="308.0" layoutY="248.0" prefHeight="86.0" prefWidth="384.0" AnchorPane.leftAnchor="308.0" AnchorPane.topAnchor="248.0" />
+   <Label layoutX="308.0" layoutY="155.0" text="Cena:" AnchorPane.leftAnchor="308.0" AnchorPane.topAnchor="155.0" />
+   <TextField fx:id="price" layoutX="308.0" layoutY="182.0" prefHeight="39.0" prefWidth="384.0" AnchorPane.leftAnchor="308.0" AnchorPane.topAnchor="182.0" />
+   <Button layoutX="308.0" layoutY="356.0" mnemonicParsing="false" onAction="#changeSceneToRestaurantMenu" text="Anuluj" AnchorPane.leftAnchor="308.0" AnchorPane.topAnchor="356.0" />
+   <Button layoutX="590.0" layoutY="356.0" mnemonicParsing="false" onAction="#validateAndSave" text="Zapisz" AnchorPane.leftAnchor="590.0" AnchorPane.topAnchor="356.0" />
+   <Button layoutX="455.0" layoutY="356.0" mnemonicParsing="false" onAction="#delete" text="Usuń" AnchorPane.leftAnchor="455.0" AnchorPane.topAnchor="356.0" />
+</AnchorPane>

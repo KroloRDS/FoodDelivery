@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="600.0" prefWidth="1000.0" styleClass="main" stylesheets="@../../CSS/Styles.css" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="food_delivery.controller.customer.ThankYou">
+   <Label layoutX="267.0" layoutY="44.0" prefHeight="93.0" prefWidth="466.0" text="               Dziękujemy za złożenie zamówienia.               Nasz dostawca pojawi się u Państwa niebawem. Smacznego!" textAlignment="CENTER" wrapText="true" AnchorPane.leftAnchor="267.0" AnchorPane.topAnchor="202.0" />
+   <Button layoutX="463.0" layoutY="303.0" mnemonicParsing="false" onAction="#changeSceneToCustomerMain" text="OK" AnchorPane.leftAnchor="463.0" AnchorPane.topAnchor="303.0" />
+</AnchorPane>

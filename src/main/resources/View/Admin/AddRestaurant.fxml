@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="600.0" prefWidth="1000.0" styleClass="main" stylesheets="@../../CSS/Styles.css" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="food_delivery.controller.admin.AddRestaurant">
+   <ListView fx:id="listView" layoutX="23.0" layoutY="50.0" prefHeight="442.0" prefWidth="475.0" />
+   <Button layoutX="22.0" layoutY="530.0" mnemonicParsing="false" onAction="#changeSceneToAdminMain" prefHeight="39.0" prefWidth="192.0" text="Wróć" />
+   <Label layoutX="23.0" layoutY="14.0" text="Konta uzytkownikow:" />
+   <Button layoutX="308.0" layoutY="530.0" mnemonicParsing="false" onAction="#changeType" prefHeight="39.0" prefWidth="192.0" text="Zmień typ konta" />
+</AnchorPane>

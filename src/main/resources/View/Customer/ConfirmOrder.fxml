@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="600.0" prefWidth="1000.0" styleClass="main" stylesheets="@../../CSS/Styles.css" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="food_delivery.controller.customer.ConfirmOrder">
+   <TextField fx:id="name" layoutX="724.0" layoutY="56.0" AnchorPane.leftAnchor="724.0" AnchorPane.topAnchor="56.0" />
+   <TextField fx:id="address" layoutX="724.0" layoutY="122.0" AnchorPane.leftAnchor="724.0" AnchorPane.topAnchor="122.0" />
+   <TextField fx:id="phone" layoutX="724.0" layoutY="188.0" AnchorPane.leftAnchor="724.0" AnchorPane.topAnchor="188.0" />
+   <Button layoutX="823.0" layoutY="534.0" mnemonicParsing="false" onAction="#validate" text="Zamawiam" AnchorPane.leftAnchor="823.0" AnchorPane.topAnchor="534.0" />
+   <Button layoutX="28.0" layoutY="534.0" mnemonicParsing="false" onAction="#changeSceneToCustomerMenu" text="Wróć" AnchorPane.leftAnchor="28.0" AnchorPane.topAnchor="534.0" />
+   <Label layoutX="28.0" layoutY="29.0" text="Twoje zamówienie:" AnchorPane.leftAnchor="28.0" AnchorPane.topAnchor="29.0" />
+   <Label layoutX="725.0" layoutY="29.0" text="Imię i nazwisko:" AnchorPane.leftAnchor="725.0" AnchorPane.topAnchor="29.0" />
+   <Label layoutX="724.0" layoutY="95.0" text="Adres:" AnchorPane.leftAnchor="724.0" AnchorPane.topAnchor="95.0" />
+   <Label layoutX="722.0" layoutY="161.0" text="Numer telefonu:" AnchorPane.leftAnchor="722.0" AnchorPane.topAnchor="161.0" />
+   <Label fx:id="label" layoutX="25.0" layoutY="442.0" text="placeholder" />
+   <TextArea fx:id="order" disable="true" layoutX="28.0" layoutY="55.0" prefHeight="387.0" prefWidth="507.0" />
+</AnchorPane>

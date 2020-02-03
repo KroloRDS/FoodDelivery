@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="600.0" prefWidth="1000.0" styleClass="main" stylesheets="@../../CSS/Styles.css" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="food_delivery.controller.customer.Main">
+   <Button layoutX="22.0" layoutY="485.0" mnemonicParsing="false" onAction="#validateAndGoToMenu" prefHeight="54.0" prefWidth="457.0" text="Przejdź do Menu" />
+   <Button layoutX="585.0" layoutY="339.0" mnemonicParsing="false" onAction="#changeSceneToCustomerOrders" prefHeight="54.0" prefWidth="322.0" text="Historia zamówień" />
+   <Button layoutX="585.0" layoutY="408.0" mnemonicParsing="false" onAction="#changeSceneToEditAccount" prefHeight="54.0" prefWidth="322.0" text="Edycja danych konta" />
+   <Button layoutX="585.0" layoutY="477.0" mnemonicParsing="false" onAction="#changeSceneToWelcome" prefHeight="54.0" prefWidth="322.0" text="Wyloguj" />
+   <ListView fx:id="listView" layoutX="22.0" layoutY="55.0" prefHeight="414.0" prefWidth="457.0" AnchorPane.leftAnchor="22.0" AnchorPane.topAnchor="55.0" />
+   <Label layoutX="22.0" layoutY="28.0" text="Wybierz restaurację:" AnchorPane.leftAnchor="22.0" AnchorPane.topAnchor="28.0" />
+   <ImageView fitHeight="349.0" fitWidth="441.0" layoutX="518.0" layoutY="55.0" pickOnBounds="true" preserveRatio="true">
+      <Image url="@../../IMG/food4.jpg" />
+   </ImageView>
+</AnchorPane>

@@ -1,0 +1,68 @@
+.main {
+    -fx-background-color: #1c214b;
+}
+
+.button {
+    -fx-background-color: #3159d3;
+    -fx-border-radius:6px;
+
+    -fx-display:inline-block;
+    -fx-cursor:pointer;
+    -fx-font-size:18px;
+    -fx-font-weight:bold;
+    -fx-padding:6px 24px;
+    -fx-text-decoration:none;
+    -fx-text-fill: white;
+}
+.button:hover {
+    -fx-background-color: #2c94d3;
+}
+
+.label {
+    -fx-text-fill: white;
+    -fx-font-size: 18.0;
+    -fx-font-weight: bold;
+}
+
+.welcome {
+    -fx-font-size: 72.0;
+}
+
+.jedzonko {
+    -fx-font-size: 72.0;
+    -fx-font-style: italic;
+}
+
+.list-view .list-cell {
+    -fx-text-fill: #0d1763;
+    -fx-font-size: 18.0;
+    -fx-font-weight: bold;
+}
+
+.list-view .list-cell:even {
+    -fx-background-color: #a1bfe7;
+}
+
+.list-view .list-cell:odd {
+    -fx-background-color: #bdd5fb;
+}
+
+.list-view .list-cell:selected {
+    -fx-background-color: white;
+}
+
+.text-field {
+    -fx-background-color: #a1bfe7;
+    -fx-text-fill: #0d1763;
+    -fx-prompt-text-fill: #4f72a7;
+    -fx-font-size: 18.0;
+    -fx-font-weight: bold;
+}
+
+.text-area {
+    -fx-background-color: #a1bfe7;
+    -fx-text-fill: #0d1763;
+    -fx-prompt-text-fill: #4f72a7;
+    -fx-font-size: 18.0;
+    -fx-font-weight: bold;
+}

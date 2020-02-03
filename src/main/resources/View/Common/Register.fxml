@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="600.0" prefWidth="1000.0" styleClass="main" stylesheets="@../../CSS/Styles.css" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="food_delivery.controller.common.Register">
+   <Label layoutX="30.0" prefHeight="76.0" prefWidth="368.0" text="Stwórz nowe konto:" />
+   <Button layoutX="754.0" layoutY="518.0" mnemonicParsing="false" onAction="#register" prefHeight="54.0" prefWidth="205.0" text="Zarejestruj się" />
+   <Button layoutX="30.0" layoutY="518.0" mnemonicParsing="false" onAction="#changeSceneToWelcome" prefHeight="54.0" prefWidth="199.0" text="Wróć" />
+   <TextField fx:id="name" layoutX="30.0" layoutY="66.0" prefHeight="47.0" prefWidth="406.0" promptText="Imię" />
+   <TextField fx:id="surname" layoutX="30.0" layoutY="120.0" prefHeight="47.0" prefWidth="406.0" promptText="Nazwisko" />
+   <TextField fx:id="email" layoutX="30.0" layoutY="174.0" prefHeight="47.0" prefWidth="406.0" promptText="Email" />
+   <TextField fx:id="phoneNumber" layoutX="30.0" layoutY="229.0" prefHeight="47.0" prefWidth="406.0" promptText="Nr telefonu" />
+   <TextField fx:id="street" layoutX="30.0" layoutY="284.0" prefHeight="47.0" prefWidth="406.0" promptText="Ulica" />
+   <TextField fx:id="postalCode" layoutX="30.0" layoutY="338.0" prefHeight="47.0" prefWidth="216.0" promptText="Kod pocztowy" />
+   <TextField fx:id="city" layoutX="30.0" layoutY="393.0" prefHeight="47.0" prefWidth="406.0" promptText="Miasto" />
+   <TextField fx:id="houseNumber" layoutX="30.0" layoutY="448.0" prefHeight="47.0" prefWidth="142.0" promptText="Nr domu" />
+   <TextField fx:id="login" layoutX="551.0" layoutY="69.0" prefHeight="47.0" prefWidth="406.0" promptText="Login" />
+   <PasswordField fx:id="password" layoutX="551.0" layoutY="124.0" prefHeight="47.0" prefWidth="406.0" promptText="Hasło" />
+</AnchorPane>

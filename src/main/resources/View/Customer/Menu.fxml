@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="600.0" prefWidth="1000.0" styleClass="main" stylesheets="@../../CSS/Styles.css" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="food_delivery.controller.customer.Menu">
+   <Button layoutX="27.0" layoutY="518.0" mnemonicParsing="false" onAction="#changeSceneToCustomerMain" text="Wróć" AnchorPane.leftAnchor="27.0" AnchorPane.topAnchor="518.0" />
+   <Button layoutX="546.0" layoutY="518.0" mnemonicParsing="false" onAction="#validateAndGoConfirmation" text="Dalej" AnchorPane.leftAnchor="546.0" AnchorPane.topAnchor="518.0" />
+   <ListView fx:id="listView" layoutX="27.0" layoutY="49.0" prefHeight="412.0" prefWidth="610.0" AnchorPane.leftAnchor="27.0" AnchorPane.topAnchor="49.0" />
+   <Label layoutX="27.0" layoutY="24.0" text="Wybierz potrawę:" AnchorPane.leftAnchor="27.0" AnchorPane.topAnchor="24.0" />
+   <Button layoutX="649.0" layoutY="51.0" mnemonicParsing="false" onAction="#incQuantity" prefHeight="60.0" prefWidth="61.0" text="+" />
+   <Button layoutX="649.0" layoutY="127.0" mnemonicParsing="false" onAction="#decQuantity" prefHeight="60.0" prefWidth="61.0" text="-" />
+   <Label fx:id="label" layoutX="27.0" layoutY="461.0" text="placeholder" />
+</AnchorPane>

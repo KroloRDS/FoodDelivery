@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="600.0" prefWidth="1000.0" styleClass="main" stylesheets="@../../CSS/Styles.css" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="food_delivery.controller.restaurant.Menu">
+   <ListView fx:id="listView" layoutX="24.0" layoutY="53.0" prefHeight="413.0" prefWidth="694.0" AnchorPane.leftAnchor="24.0" AnchorPane.topAnchor="53.0" />
+   <Button layoutX="378.0" layoutY="491.0" mnemonicParsing="false" onAction="#changeSceneToRestaurantEdit" prefHeight="39.0" prefWidth="163.0" text="Nowa" AnchorPane.leftAnchor="378.0" AnchorPane.topAnchor="491.0" />
+   <Button layoutX="24.0" layoutY="491.0" mnemonicParsing="false" onAction="#changeSceneToRestaurantMain" text="Wróć" AnchorPane.leftAnchor="24.0" AnchorPane.topAnchor="491.0" />
+   <Label layoutX="25.0" layoutY="21.0" text="Wybierz pozycję z menu, aby móc ją edytować:" AnchorPane.leftAnchor="25.0" AnchorPane.topAnchor="21.0" />
+   <Button layoutX="555.0" layoutY="491.0" mnemonicParsing="false" onAction="#validateAndGoToEditView" text="Edytuj / Usuń" />
+</AnchorPane>

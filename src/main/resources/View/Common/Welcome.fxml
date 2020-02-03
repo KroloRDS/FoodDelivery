@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="600.0" prefWidth="1000.0" styleClass="main" stylesheets="@../../CSS/Styles.css" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="food_delivery.controller.common.Welcome">
+   <TextField fx:id="loginTextField" layoutX="29.0" layoutY="379.0" prefHeight="43.0" prefWidth="237.0" promptText="Login" />
+   <PasswordField fx:id="password" layoutX="29.0" layoutY="430.0" prefHeight="43.0" prefWidth="237.0" promptText="Hasło" AnchorPane.leftAnchor="29.0" AnchorPane.topAnchor="430.0" />
+   <Button layoutX="29.0" layoutY="479.0" mnemonicParsing="false" onAction="#login" prefHeight="51.0" prefWidth="159.0" text="Zaloguj" AnchorPane.leftAnchor="29.0" AnchorPane.topAnchor="479.0" />
+   <Button layoutX="28.0" layoutY="255.0" mnemonicParsing="false" onAction="#changeSceneToRegister" prefHeight="51.0" prefWidth="159.0" text="Rejestracja" AnchorPane.leftAnchor="28.0" AnchorPane.topAnchor="255.0" />
+   <Label layoutX="29.0" layoutY="55.0" prefHeight="80.0" prefWidth="346.0" styleClass="welcome" text="Witamy!" AnchorPane.leftAnchor="29.0" AnchorPane.topAnchor="55.0" />
+   <Label layoutX="32.0" layoutY="195.0" prefHeight="60.0" prefWidth="377.0" text="Jeśli jesteś nowym klientem i chcesz założyć konto - kliknij poniżej:" wrapText="true" AnchorPane.leftAnchor="32.0" AnchorPane.topAnchor="195.0" />
+   <Label layoutX="32.0" layoutY="349.0" text="Jeśli posiadasz już konto możesz się zalogować:" AnchorPane.leftAnchor="32.0" AnchorPane.topAnchor="349.0" />
+   <Label layoutX="594.0" layoutY="55.0" prefHeight="51.0" prefWidth="367.0" styleClass="jedzonko" text="Jedzonko" />
+   <ImageView fitHeight="202.0" fitWidth="367.0" layoutX="594.0" layoutY="157.0" pickOnBounds="true" preserveRatio="true">
+      <Image url="@../../IMG/food2.jpg" />
+   </ImageView>
+   <Label layoutX="33.0" layoutY="148.0" text="Chciałbyś zamówić jedzenie?" />
+   <ImageView fitHeight="106.0" fitWidth="176.0" layoutX="594.0" layoutY="321.0" pickOnBounds="true" preserveRatio="true">
+      <Image url="@../../IMG/food1.jpg" />
+   </ImageView>
+   <ImageView fitHeight="111.0" fitWidth="182.0" layoutX="780.0" layoutY="321.0" pickOnBounds="true" preserveRatio="true">
+      <Image url="@../../IMG/food3.jpg" />
+   </ImageView>
+</AnchorPane>
